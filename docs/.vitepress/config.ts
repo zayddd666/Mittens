@@ -1,47 +1,40 @@
 import { defineConfig } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar'
 
 export default defineConfig({
-  base: '/ShellUI/',
   title: "ShellUI",
   description: "A clean custom UI framework for Roblox.",
   
   themeConfig: {
     logo: '/logo.png',
 
+    // Fixes topbar text to exactly "API"
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Resources', link: '/resources/getting-started' },
-      { text: 'API Reference', link: '/api/' }
+      { text: 'API', link: '/api/' }
     ],
 
-// Sets up multi-sidebar tracking for your folders
-    sidebar: {
-      '/resources/': [
-        {
-          text: 'Introduction',
-          items: [
-            { text: 'Getting Started', link: '/resources/getting-started' },
-            // Add any other resource files here, for example:
-            // { text: 'Installation', link: '/resources/installation' }
-          ]
-        }
-      ],
-      '/api/': [
-        {
-          text: 'API Reference',
-          items: [
-            { text: 'Overview', link: '/api/' },
-            // Add your custom framework system components here:
-            { text: 'Conch Terminal', link: '/api/conch' },
-            { text: 'BitAntiCheat', link: '/api/bitanticheat' },
-            { text: 'Mittens UI', link: '/api/mittens' }
-          ]
-        }
-      ]
-    },
+    // Automatically scans directories so every markdown file shows up
+    sidebar: generateSidebar([
+      {
+        documentRootPath: 'docs',
+        scanStartPath: 'resources',
+        resolvePath: '/resources/',
+        useTitleFromFileHeading: true,
+        hyphenToSpace: true
+      },
+      {
+        documentRootPath: 'docs',
+        scanStartPath: 'api',
+        resolvePath: '/api/',
+        useTitleFromFileHeading: true,
+        hyphenToSpace: true
+      }
+    ]),
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/zayddd666/ShellUI' }
     ]
   }
-})// Force rebuild trigger
+})
