@@ -12,6 +12,13 @@ hero:
       text: Getting Started
       link: /getting-started
     - theme: alt
+features:
+    - title: Easy to use
+      details: Functions simple, you only need one LocalScript for it!
+    - title: Powerful
+      details: Uses the mosd advanced and powerful luau functions and types!
+    - title: Modular
+      details: uses a module so it provides the easiest requirements to use!
 ---
 
 <style>
