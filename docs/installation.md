@@ -6,17 +6,18 @@
 
 Only rbxm is available for now.
 
-<a href="/mittens standalone.rbxm" download="mittens standalone.rbxm">
+<!-- Using VitePress base helper to guarantee it maps to /Mittens/mittens standalone.rbxm -->
+<a :href="$withBase('/mittens standalone.rbxm')" download="mittens standalone.rbxm">
   <button class="rbxm-download-btn">
     Download latest rbxm
   </button>
 </a>
 
 <style scoped>
-/* Styling for your clean, standalone button */
+/* Clean, midnight/teal styling for the button */
 .rbxm-download-btn {
   display: inline-block;
-  background-color: #1a7a88; /* The signature teal color */
+  background-color: #1a7a88; 
   color: white;
   padding: 10px 20px;
   border: none;
@@ -34,6 +35,6 @@ Only rbxm is available for now.
 }
 
 .rbxm-download-btn:active {
-  transform: scale(0.98); /* Slight click feedback */
+  transform: scale(0.98);
 }
 </style>
