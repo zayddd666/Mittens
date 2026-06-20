@@ -1,11 +1,11 @@
 ﻿# Installation
 
-## Mittens API Components
+## ShellUI API Components
 
 ### Components
 
 ```lua
-local MittensAPI = {
+local ShellAPI = {
 	Frame = Construct("Frame"),
 	Button = Construct("TextButton"),
 	Label = Construct("TextLabel"),
