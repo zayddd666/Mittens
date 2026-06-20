@@ -9,7 +9,7 @@ hero:
     alt: Mittens Logo
   actions:
     - theme: brand
-      text: Getting Started
+      text: Learn
       link: /getting-started
     - theme: alt
 ---
