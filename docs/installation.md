@@ -6,7 +6,7 @@
 
 Only rbxm is available for now.
 
-<a href="/public.mittens standalone.rbxm" download="public.mittens standalone.rbxm">
+<a href="/mittens standalone.rbxm" download="mittens standalone.rbxm">
   <button class="rbxm-download-btn">
     Download latest rbxm
   </button>
@@ -23,7 +23,7 @@ Only rbxm is available for now.
   border-radius: 4px;
   font-weight: 600;
   font-size: 15px;
-  text-decoration: none; /* Removed underline for a cleaner look, change back to 'underline' if preferred */
+  text-decoration: none; 
   cursor: pointer;
   transition: background 0.2s ease, transform 0.1s ease;
   margin-top: 12px;
