@@ -6,18 +6,18 @@
 
 Only rbxm is available for now.
 
-<!-- Using VitePress base helper to guarantee it maps to /Mittens/mittens standalone.rbxm -->
-<a :href="$withBase('/mittens standalone.rbxm')" download="mittens standalone.rbxm">
+<!-- Dynamic Vue link handling the new ShellUI repo path perfectly -->
+<a :href="$withBase('/shellui standalone.rbxm')" download="shellui standalone.rbxm">
   <button class="rbxm-download-btn">
     Download latest rbxm
   </button>
 </a>
 
 <style scoped>
-/* Clean, midnight/teal styling for the button */
+/* --- STANDALONE DOWNLOAD BUTTON STYLING --- */
 .rbxm-download-btn {
   display: inline-block;
-  background-color: #1a7a88; 
+  background-color: #1a7a88; /* Signature teal color */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -35,6 +35,6 @@ Only rbxm is available for now.
 }
 
 .rbxm-download-btn:active {
-  transform: scale(0.98);
+  transform: scale(0.98); 
 }
 </style>

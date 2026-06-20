@@ -6,10 +6,10 @@ hero:
   tagline: A clean custom UI framework for Roblox.
   image:
     src: /logo.png
-    alt: Mittens Logo
+    alt: ShellUI Logo
   actions:
     - theme: brand
-      text: Learn
+      text: Getting Started
       link: /getting-started
     - theme: alt
 ---
@@ -17,7 +17,6 @@ hero:
 <style>
 /* --- HOMEPAGE LAYOUT --- */
 @media (min-width: 960px) {
-  /* Keeps Text on the LEFT and Image on the RIGHT */
   .VPHero .container {
     display: flex !important;
     flex-direction: row !important;
@@ -38,12 +37,11 @@ hero:
   }
 }
 
-/* --- ULTRA-SMOOTH BLUE GLOW EFFECT --- */
+/* --- ULTRA-SMOOTH BLUE CYBER GLOW EFFECT --- */
 .VPHero .image {
   position: relative;
 }
 
-/* Increased the blur to 90px to make it spread smoothly like butter */
 .VPHero .image::before {
   content: "";
   position: absolute;
@@ -54,24 +52,22 @@ hero:
   height: 500px;
   background: radial-gradient(
     circle, 
-    rgba(0, 240, 255, 0.75) 0%,   /* Bright Neon Cyan/Blue Core */
+    rgba(0, 240, 255, 0.75) 0%,   /* Bright Neon Cyan Core */
     rgba(0, 140, 255, 0.35) 45%,  /* Electric Blue Mid-glow */
     rgba(10, 35, 80, 0.1) 70%,    /* Deep Midnight Blue Blend */
     rgba(0, 0, 0, 0) 85%          /* Flawless alpha fade */
   );
-  filter: blur(90px);              /* High blur values remove all jagged edge lines */
+  filter: blur(90px);              
   z-index: -1;
   pointer-events: none;
 }
 
-/* Smooth ambient soft-bloom drop shadow on the image asset itself */
 .VPHero .image-src {
   max-height: 360px !important;
   max-width: 360px !important;
   width: 100% !important;
   height: auto !important;
   z-index: 2;
-  /* Swapped to a wide, low-intensity blue bloom for maximum smoothness */
   filter: drop-shadow(0 0 45px rgba(0, 210, 255, 0.3)); 
 }
 </style>
