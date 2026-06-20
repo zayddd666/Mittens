@@ -15,13 +15,13 @@ export default defineConfig({
       { text: 'API', link: '/api/' }
     ],
 
-    // GLOBAL SIDEBAR: This makes ALL sections visible on every single page
+    // GLOBAL SIDEBAR: Organized in the correct sequential order
     sidebar: [
       {
         text: 'Introduction',
         items: [
-          { text: 'Getting Started', link: '/resources/getting-started' },
-          { text: "Why?", link: '/resources/index' },
+          { text: "Why?", link: '/resources/index' }, // Moved to the top so it's first
+          { text: 'Getting Started', link: '/resources/getting-started' }, // Now "Next Page" will correctly say Getting Started
           { text: "Installation", link: "/resources/installation" },
           { text: "Setting Up", link: "/resources/setting-up" }
         ]
