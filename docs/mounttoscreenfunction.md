@@ -1,6 +1,6 @@
 ﻿# Installation
 
-## Mittens Mounting Function
+## ShellUI Mounting Function
 
 ### Mounting Function
 

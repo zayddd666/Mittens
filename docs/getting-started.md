@@ -1,3 +1,3 @@
 ﻿# Getting Started
 
-Welcome to the Mittens UI documentation, go to the next page to install!
+Welcome to the ShellUI documentation, go to the next page to install!

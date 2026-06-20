@@ -1,7 +1,7 @@
 ﻿---
 layout: home
 hero:
-  name: Mittens
+  name: ShellUI
   text: UI Framework
   tagline: A clean custom UI framework for Roblox.
   image:

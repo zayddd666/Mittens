@@ -3,14 +3,14 @@ A UI Framework in roblox
 
 
 
-The first version of Mittens
+The first version of ShellUI
 
 - Frame Support
 - Button Support
 - Text Support
 - Aspect Ratio Support
 - List Layout Support
-Full Changelog: https://github.com/datashe192/Mittens/commits/0.1.0
+Full Changelog: https://github.com/datashe192/ShellUI/commits/0.1.0
 
 
 Example Script:
@@ -20,15 +20,15 @@ Example Script:
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
-local lib = require(PATH.TO.MITTENS) -- Put your path to mittens here!
-local Mittens = lib :: any
+local lib = require(PATH.TO.SHELLUI) -- Put your path to mittens here!
+local ShellUI = lib :: any
 
 local Screen = Instance.new("ScreenGui")
 Screen.IgnoreGuiInset = true
 Screen.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
 
 -- 3. Build your UI
-local label = Mittens.Label {
+local label = ShellUI.Label {
 	Transparency = 1,
 	Position = {0.5, 0.5},
 	AnchorPoint = {0.5, 0.5},
@@ -40,5 +40,5 @@ local label = Mittens.Label {
 lib.MountToScreen(label, Screen)
 ```
 
-# Short History of Mittens
-So mittens was supposed to be a Leaderstat system for the players in the Current Server, Basically the same as the roblox lederboard. But then an idea popped up in my head and i decided it was supposed to be a UI Framework
+# Short History of ShellUI
+So ShellUI was supposed to be a Leaderstat system for the players in the Current Server, Basically the same as the roblox lederboard. But then an idea popped up in my head and i decided it was supposed to be a UI Framework

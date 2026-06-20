@@ -2,9 +2,9 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   // 👇 ADDED THIS LINE TO FIX GITHUB PAGES ROUTING
-  base: '/Mittens/', 
+  base: '/ShellUI/', 
 
-  title: "Mittens UI Framework",
+  title: "ShellUI",
   description: "A UI Framework",
   
   head: [
@@ -20,7 +20,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.png',         
-    siteTitle: 'Mittens',          
+    siteTitle: 'ShellUI',          
 
     search: {
       provider: 'local'
@@ -39,7 +39,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Setting Up Mittens',
+        text: 'Setting Up Shellui',
         items: [
           { text: 'Setting Up', link: '/setting-up' },
         ]
