@@ -14,12 +14,15 @@ export default defineConfig({
       { text: 'API Reference', link: '/api/' }
     ],
 
+// Sets up multi-sidebar tracking for your folders
     sidebar: {
       '/resources/': [
         {
           text: 'Introduction',
           items: [
-            { text: 'Getting Started', link: '/resources/getting-started' }
+            { text: 'Getting Started', link: '/resources/getting-started' },
+            // Add any other resource files here, for example:
+            // { text: 'Installation', link: '/resources/installation' }
           ]
         }
       ],
@@ -27,7 +30,11 @@ export default defineConfig({
         {
           text: 'API Reference',
           items: [
-            { text: 'Overview', link: '/api/' }
+            { text: 'Overview', link: '/api/' },
+            // Add your custom framework system components here:
+            { text: 'Conch Terminal', link: '/api/conch' },
+            { text: 'BitAntiCheat', link: '/api/bitanticheat' },
+            { text: 'Mittens UI', link: '/api/mittens' }
           ]
         }
       ]
