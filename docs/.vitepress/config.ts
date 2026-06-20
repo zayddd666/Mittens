@@ -20,16 +20,18 @@ export default defineConfig({
       {
         text: 'Introduction',
         items: [
-          { text: 'Getting Started', link: '/resources/getting-started' }
+          { text: 'Getting Started', link: '/resources/getting-started' },
+          { text: "Why?", link: '/resources/index' },
+          { text: "Installation", link: "/resources/installation" },
+          { text: "Setting Up", link: "/resources/setting-up" }
         ]
       },
       {
-        text: 'API Docs',
+        text: 'API',
         items: [
-          { text: 'Overview', link: '/api/' },
-          { text: 'Conch Terminal', link: '/api/conch' },
-          { text: 'BitAntiCheat', link: '/api/bitanticheat' },
-          { text: 'Mittens UI', link: '/api/mittens' }
+          { text: 'API', link: '/api/' },
+          { text: 'Components', link: '/api/components' },
+          { text: 'Mounting Function', link: '/api/mounttoscreenfunction' }
         ]
       }
     ],
