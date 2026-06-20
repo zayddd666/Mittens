@@ -8,20 +8,19 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
 
-    // Topbar layout with the API label fixed
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Resources', link: '/resources/getting-started' },
       { text: 'API', link: '/api/' }
     ],
 
-    // GLOBAL SIDEBAR: Organized in the correct sequential order
     sidebar: [
       {
         text: 'Introduction',
         items: [
-          { text: "Why?", link: '/resources/index' }, // Moved to the top so it's first
-          { text: 'Getting Started', link: '/resources/getting-started' }, // Now "Next Page" will correctly say Getting Started
+          // Changed '/resources/index' to '/resources/' so VitePress handles the index route cleanly
+          { text: "Why?", link: '/resources/' }, 
+          { text: 'Getting Started', link: '/resources/getting-started' }, 
           { text: "Installation", link: "/resources/installation" },
           { text: "Setting Up", link: "/resources/setting-up" }
         ]
