@@ -9,16 +9,18 @@ hero:
     alt: ShellUI Logo
   actions:
     - theme: brand
-      text: Getting Started
-      link: /getting-started
+      text: Learn
+      link: /resources/getting-started
     - theme: alt
+      text: Repository
+      link: https://github.com/zayddd666/ShellUI
 features:
-    - title: Easy to use
-      details: Functions simple, you only need one LocalScript for it!
-    - title: Powerful
-      details: Uses the mosd advanced and powerful luau functions and types!
-    - title: Modular
-      details: uses a module so it provides the easiest requirements to use!
+  - title: Easy to use
+    details: Functions simple, you only need one LocalScript for it!
+  - title: Powerful
+    details: Uses the most advanced and powerful luau functions and types!
+  - title: Modular
+    details: uses a module so it provides the easiest requirements to use!
 ---
 
 <style>
