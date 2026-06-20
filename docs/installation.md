@@ -6,9 +6,11 @@
 
 Only rbxm is available for now.
 
-<button class="rbxm-download-btn">
-  Download latest rbxm
-</button>
+<a href="/public.mittens standalone.rbxm" download="public.mittens standalone.rbxm">
+  <button class="rbxm-download-btn">
+    Download latest rbxm
+  </button>
+</a>
 
 <style scoped>
 /* Styling for your clean, standalone button */
@@ -21,13 +23,17 @@ Only rbxm is available for now.
   border-radius: 4px;
   font-weight: 600;
   font-size: 15px;
-  text-decoration: underline; /* Keeps the text underlined */
+  text-decoration: none; /* Removed underline for a cleaner look, change back to 'underline' if preferred */
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.1s ease;
   margin-top: 12px;
 }
 
 .rbxm-download-btn:hover {
   background-color: #228b9b;
+}
+
+.rbxm-download-btn:active {
+  transform: scale(0.98); /* Slight click feedback */
 }
 </style>
