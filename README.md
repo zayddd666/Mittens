@@ -10,7 +10,7 @@ The first version of ShellUI
 - Text Support
 - Aspect Ratio Support
 - List Layout Support
-Full Changelog: https://github.com/datashe192/ShellUI/commits/0.1.0
+Full Changelog: https://github.com/zayddd666/ShellUI/commits/0.1.0
 
 
 Example Script:
