@@ -9,9 +9,7 @@ import { withBase } from 'vitepress'
 ::: tabs
 
 == Rbxm
-Only rbxm is available for now
-Soon more methods will be available!
-Install the rbxm and add it to roblox studio.
+Install the rbxm and add it to roblox studio!
 
 <a :href="withBase('/shellui standalone.rbxm')" download="shellui standalone.rbxm">
   <button class="rbxm-download-btn">
