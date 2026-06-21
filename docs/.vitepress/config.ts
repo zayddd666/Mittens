@@ -1,4 +1,4 @@
-import { defineConfig, type UserConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 export default defineConfig({
@@ -6,7 +6,6 @@ export default defineConfig({
   title: "ShellUI",
   description: "A clean custom UI framework for Roblox.",
   
-  // Register the tabs plugin in the markdown config block
   markdown: {
     config: (md) => {
       md.use(tabsMarkdownPlugin)
@@ -20,12 +19,17 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Resources', link: '/resources/getting-started' },
       { text: 'API', link: '/api/' },
-      { text: 'Components', link: '/components/' }, // Added to the top bar!
+      
+      {
+        text: 'Configuration',
+        items: [
+          { text: 'Configuration', link: '/components/' }, // ➜ Opens your components/index.md page directly
+          { text: 'Glossary', link: '/configuration/' }     // ➜ Opens your configuration/index.md glossary page
+        ]
+      }
     ],
 
-    // Multi-sidebar configuration: Changes sidebars based on where you are!
     sidebar: {
-      // Sidebar shown when you are in the Resources section
       '/resources/': [
         {
           text: 'Introduction',
@@ -38,7 +42,6 @@ export default defineConfig({
         }
       ],
 
-      // Sidebar shown when you click "API"
       '/api/': [
         {
           text: 'API',
@@ -49,8 +52,8 @@ export default defineConfig({
         }
       ],
 
-      // Sidebar shown when you click "Components"
-'/components/': [
+      // This sidebar handles the big component list (shared when viewing components or the config fallback)
+      '/components/': [
         {
           text: 'UI Components',
           items: [
@@ -63,6 +66,17 @@ export default defineConfig({
             { text: 'List', link: '/components/list' },
             { text: 'Stroke', link: '/components/stroke' },
             { text: 'TextInput', link: '/components/textinput' }
+          ]
+        }
+      ],
+
+      // ➜ STRICT FIX FOR THE GLOSSARY SIDEBAR
+      // This forces VitePress to only display ONE link when viewing configuration/index.md
+      '/configuration/': [
+        {
+          text: 'Component Glossary',
+          items: [
+            { text: 'Glossary', link: '/configuration/' }
           ]
         }
       ]
