@@ -4,7 +4,7 @@
 
 # Example Client Script
 
-```lua
+```luau
 -- EXAMPLE SCRIPT
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")

@@ -4,7 +4,7 @@
 
 ### Components
 
-```lua
+```luau
 local ShellAPI = {
 	Frame = Construct("Frame"),
 	Button = Construct("TextButton"),

@@ -4,7 +4,7 @@
 
 ### Mounting Function
 
-```lua
+```luau
 	MountToScreen = function(node: VirtualNode, screenGui: ScreenGui)
 		task.spawn(function()
 			local inst = node.GetHardware()
