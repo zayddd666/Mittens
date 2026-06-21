@@ -44,4 +44,11 @@ Install the rbxm and add it to roblox studio.
   transform: scale(0.98); 
 }
 </style>
+
+== Pesde
+
+In your terminal, run this command
+```bash
+pesde add zayddd666/shellui
+```
 :::
