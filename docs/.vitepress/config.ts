@@ -18,13 +18,13 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Resources', link: '/resources/getting-started' },
-      { text: 'API', link: '/api/' },
       
       {
-        text: 'Configuration',
+        text: 'API',
         items: [
-          { text: 'Configuration', link: '/components/' }, // ➜ Opens your components/index.md page directly
-          { text: 'Glossary', link: '/configuration/' }     // ➜ Opens your configuration/index.md glossary page
+          { text: 'Configuration', link: '/components/' },
+          { text: 'Glossary', link: '/configuration/' },
+          { text: 'Mounting', link: '/api/mounttoscreenfunction' }
         ]
       }
     ],
@@ -52,7 +52,6 @@ export default defineConfig({
         }
       ],
 
-      // This sidebar handles the big component list (shared when viewing components or the config fallback)
       '/components/': [
         {
           text: 'UI Components',
@@ -70,8 +69,7 @@ export default defineConfig({
         }
       ],
 
-      // ➜ STRICT FIX FOR THE GLOSSARY SIDEBAR
-      // This forces VitePress to only display ONE link when viewing configuration/index.md
+
       '/configuration/': [
         {
           text: 'Component Glossary',
