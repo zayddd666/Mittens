@@ -20,7 +20,7 @@ Example Script:
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
-local lib = require(PATH.TO.SHELLUI) -- Put your path to mittens here!
+local lib = require(PATH.TO.SHELLUI) -- Put your path to ShellUI here!
 local ShellUI = lib :: any
 
 local Screen = Instance.new("ScreenGui")
@@ -35,7 +35,7 @@ local label = ShellUI.Label {
 	Size = {0.5, 0.2},
 	Color = Color3.fromRGB(255, 255, 255),
 	Text = "It Works!"
-} (nil) -- You Pass nil here and not Screen.Ptr because its not inside any of Mittens's UI Elements, if you want to Parent it inside a frame pass Frame.Ptr
+} (nil) -- You Pass nil here and not Screen.Ptr because its not inside any of ShellUI's UI Elements, if you want to Parent it inside a frame pass Frame.Ptr
 
 lib.MountToScreen(label, Screen)
 ```
