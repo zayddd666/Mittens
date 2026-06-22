@@ -6,9 +6,26 @@ export default defineConfig({
   title: "ShellUI",
   description: "A clean custom UI framework for Roblox.",
   
-  // This changes the browser tab icon (favicon) seen in Screenshot 2026-06-22 163723.png
   head: [
-    ['link', { rel: 'icon', href: '/ShellUI/logo.png' }]
+    // This bakes a fallback light-blue shell/cube icon directly into the code so it never returns blank
+    ['link', { 
+      rel: 'icon', 
+      type: 'image/svg+xml', 
+      href: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%237dd3fc"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>' 
+    }],
+    
+    // Navbar Fix: Prevents the logo from stretching out
+    [
+      'style',
+      {},
+      `
+      .VPNavBar .logo {
+        object-fit: contain !important;
+        width: auto !important;
+        height: 24px !important;
+      }
+      `
+    ]
   ],
   
   markdown: {
@@ -18,7 +35,6 @@ export default defineConfig({
   },
 
   themeConfig: {
-    // VitePress automatically handles the base path for this logo
     logo: '/logo.png',
 
     nav: [
